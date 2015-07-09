@@ -166,7 +166,7 @@ which are “owned” by the component.
 The component object seems to occur before any of its child objects.
 * `|LIBREFERENCE`
 * `|COMPONENTDESCRIPTION`: Optional
-* `|PARTCOUNT` ([Integer]): Number of separated parts within component
+* `|PARTCOUNT` ([integer]): Number of separated parts within component
     (e.g. there might be four parts in a quad op-amp component).
     The value seems to be one more than you would expect,
     so 2 implies a normal component, and the quad op-amp would have 5.
@@ -447,7 +447,7 @@ It may not be displayed at all, depending on a configuration setting.
 * `|LOCATION.X|LOCATION.Y`: Bottom-left corner
 * `|CORNER.X|CORNER.Y`: `_FRAC` counterparts may also be included
 * `|EMBEDIMAGE=T`
-* `|FILENAME`: File name may be a without a path (filename.ext) or
+* `|FILENAME`: File name may be without a path (filename.ext) or
     an absolute Windows path (C:\\path\\filename.ext). Suffixes: “.bmp”,
     “.tif”.
 * `|KEEPASPECT`: [Boolean]

@@ -428,7 +428,7 @@ Renderer: """By default, the schematic is converted to an SVG file,
                 val = obj["TEXT"]
                 if val.startswith(b"="):
                     for o in objects:
-                        if get_int(obj, "RECORD") != Record.PARAMETER or o.get("OWNERINDEX") != obj["OWNERINDEX"]:
+                        if get_int(o, "RECORD") != Record.PARAMETER or o.get("OWNERINDEX") != obj["OWNERINDEX"]:
                             continue
                         if o["NAME"].lower() != val[1:].lower():
                             continue
