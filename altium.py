@@ -62,8 +62,23 @@ def get_sheet_style(sheet):
     '''Returns the size of the sheet: (name, (width, height))'''
     STYLES = {
         SheetStyle.A4: ("A4", (1150, 760)),
-        SheetStyle.A3: ("A3", (1550, 1150)),
-        SheetStyle.A: ("A", (950, 760)),
+        SheetStyle.A3: ("A3", (1550, 1110)),
+        SheetStyle.A2: ("A2", (2230, 1570)),
+        SheetStyle.A1: ("A", (3150, 2230)),
+        SheetStyle.A0: ("A", (4460, 3150)),
+        SheetStyle.A: ("A", (950, 750)),
+        SheetStyle.B: ("B", (1500, 950)),
+        SheetStyle.C: ("C", (2000, 1500)),
+        SheetStyle.D: ("D", (3200, 2000)),
+        SheetStyle.E: ("E", (4200, 3200)),
+        SheetStyle.LETTER: ("Letter", (1100, 850)),
+        SheetStyle.LEGAL: ("Legal", (1400, 850)),
+        SheetStyle.TABLOID: ("Tabloid", (1700, 1100)),
+        SheetStyle.ORCAD_A: ("OrCAD A", (990, 790)),
+        SheetStyle.ORCAD_B: ("OrCAD B", (1540, 990)),
+        SheetStyle.ORCAD_C: ("OrCAD C", (2060, 1560)),
+        SheetStyle.ORCAD_D: ("OrCAD D", (3260, 2060)),
+        SheetStyle.ORCAD_E: ("OrCAD E", (4280, 3280)),
     }
     [sheetstyle, size] = STYLES[get_int(sheet, "SHEETSTYLE")]
     if get_bool(sheet, "USECUSTOMSHEET"):
@@ -175,9 +190,22 @@ class SheetStyle:
     """Preset sheet sizes"""
     A4 = 0
     A3 = 1
+    A2 = 2  # Unconfirmed
+    A1 = 3  # Unconfirmed
+    A0 = 4  # Unconfirmed
     A = 5
     B = 6
     C = 7
+    D = 8  # Unconfirmed
+    E = 9  # Unconfirmed
+    LETTER = 10  # Unconfirmed
+    LEGAL = 11  # Unconfirmed
+    TABLOID = 12  # Unconfirmed
+    ORCAD_A = 13  # Unconfirmed
+    ORCAD_B = 14  # Unconfirmed
+    ORCAD_C = 15  # Unconfirmed
+    ORCAD_D = 16  # Unconfirmed
+    ORCAD_E = 17  # Unconfirmed
 
 import vector
 from sys import stderr
