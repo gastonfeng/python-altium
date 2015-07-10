@@ -190,22 +190,22 @@ class SheetStyle:
     """Preset sheet sizes"""
     A4 = 0
     A3 = 1
-    A2 = 2  # Unconfirmed
-    A1 = 3  # Unconfirmed
-    A0 = 4  # Unconfirmed
+    A2 = 2
+    A1 = 3
+    A0 = 4
     A = 5
     B = 6
     C = 7
-    D = 8  # Unconfirmed
-    E = 9  # Unconfirmed
-    LETTER = 10  # Unconfirmed
-    LEGAL = 11  # Unconfirmed
-    TABLOID = 12  # Unconfirmed
-    ORCAD_A = 13  # Unconfirmed
-    ORCAD_B = 14  # Unconfirmed
-    ORCAD_C = 15  # Unconfirmed
-    ORCAD_D = 16  # Unconfirmed
-    ORCAD_E = 17  # Unconfirmed
+    D = 8
+    E = 9
+    LETTER = 10
+    LEGAL = 11
+    TABLOID = 12
+    ORCAD_A = 13
+    ORCAD_B = 14
+    ORCAD_C = 15
+    ORCAD_D = 16
+    ORCAD_E = 17
 
 import vector
 from sys import stderr
