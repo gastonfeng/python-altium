@@ -12,7 +12,7 @@ Contents:
 * [FileHeader](#fileheader)
 * [Property list](#property-list)
 * [Data types](#data-types): [Integer], [Colour], [Real], [Boolean]
-* [Object record types](#object-record-types)
+* [Object records](#object-records)
     * [0: Header](#header)
     * [1: Schematic component](#schematic-component)
     * [2: Pin](#pin)
